@@ -1,0 +1,293 @@
+/* Google Fonts - Caveat */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@500&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Caveat", serif;
+}
+
+body {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-repeat: no-repeat;
+  background-color: white;
+}
+
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 370px;
+  width: 100%;
+  background: #fff;
+  border-radius: 24px;
+  padding: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.profile-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 32%;
+  width: 100%;
+  border-radius: 24px 24px 0 0;
+  background-color: #3590ec;
+  background-image:url(https://i.pinimg.com/originals/eb/64/ce/eb64ce973029ebb3e3ed9b3cc3ce9ac1.gif);
+  background-size: 84%;
+}
+
+.image {
+  position: relative;
+  height: 150px;
+  width: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3.6px solid #3590ec;
+  margin-bottom: 1px;
+}
+
+.julezand {
+  height: 100%;
+  width: 100%;
+  background-image: url('https://assets-v2.lottiefiles.com/a/82411e66-1184-11ee-8cfa-d707e53cae38/bccvxj7Ogv.gif');
+  background-size: 100% 100%;
+}
+
+.image .profile-img {
+  position: relative;
+  top: -1px;
+  left: -17px;
+  height: 120%;
+  width: 120%;
+  object-fit: cover;
+  cursor: pointer;
+}
+
+.profile-card .text-data {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #333;
+}
+
+.text-data .name {
+  font-size: 32px;
+  font-weight: 500;
+}
+
+.text-data .nickname {
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.text-data .position {
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.profile-card .media-buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.media-buttons .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+  font-size: 18px;
+  height: 34px;
+  width: 34px;
+  border-radius: 50%;
+  margin: 0 8px;
+  background-color: #3590ec;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.media-buttons .link:hover {
+  box-shadow: 4px 4px #4d9ed5;
+  top: -4px;
+  left: -4px;
+}
+
+.profile-card .buttons {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.buttons .follow-button {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  border-radius: 24px;
+  margin: 0 6px;
+  padding: 8px 24px;
+  background-color: #3590ec;
+  transition: all 0.3s ease;
+}
+
+.buttons .follow-button:hover {
+  background-color: #247cd5;
+  box-shadow: 4px 4px #4d9ed5;
+  top: -4px;
+  left: -4px;
+}
+
+.buttons .message-button {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  border: none;
+  border-radius: 24px;
+  margin: 0 4px;
+  padding: 8px 24px;
+  background-color: #3590ec;
+  transition: all 0.3s ease;
+}
+
+.buttons .message-button:hover {
+  background-color: #247cd5;
+  box-shadow: 4px 4px #4d9ed5;
+  top: -4px;
+  left: -4px;
+}
+
+.buttons .switch-button {
+  color: #fff;
+  font-size: 16px;
+  font-weight: 400;
+  height: 36px;
+  width: 130px;
+  border: none;
+  border-radius: 24px;
+  margin: 0 6px;
+  background-color: #3590ec;
+  transition: all 0.3s ease;
+}
+
+.buttons .switch-button:hover {
+  background-color: #247cd5;
+  box-shadow: 4px 4px #4d9ed5;
+  top: -4px;
+  left: -4px;
+}
+
+.profile-card .analytics {
+  display: flex;
+  align-items: center;
+  margin-top: 25px;
+}
+
+.analytics .data {
+  display: flex;
+  align-items: center;
+  color: #333;
+  padding: 0 20px;
+  border-right: 2px solid #e7e7e7;
+}
+
+.data i {
+  font-size: 18px;
+  margin-right: 3px;
+}
+
+.data:last-child {
+  border-right: none;
+}
+
+.black-theme {
+  background-color: #404040 !important;
+  color: #ffffff !important;
+}
+
+.black-theme .profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 370px;
+  width: 100%;
+  background: #404040;
+  border-radius: 24px;
+  padding: 25px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+}
+
+.black-theme .image {
+  border: 3.6px solid #000000;
+}
+
+.black-theme .profile-card::before {
+  background-image: url('https://quincemedia.com/wp-content/uploads/2019/02/plexus.gif');
+  background-size: 100%;
+}
+
+.black-theme .text-data .name {
+  color: #ffffff;
+}
+
+.black-theme .text-data .nickname {
+  color: #ffffff;
+}
+
+.black-theme .text-data .position {
+  color: #ffffff;
+}
+
+.black-theme .media-buttons .link {
+  color: #ffffff;
+}
+
+.black-theme .buttons .follow-button {
+  background-color: #000000;
+}
+
+.black-theme .buttons .follow-button:hover {
+  background-color: #28282B;
+  box-shadow: 4px 4px #808080;
+  top: -4px;
+  left: -4px;
+}
+
+.black-theme .buttons .message-button {
+  background-color: #000000;
+}
+
+.black-theme .buttons .message-button:hover {
+  background-color: #28282B;
+  box-shadow: 4px 4px #808080;
+  top: -4px;
+  left: -4px;
+}
+
+.black-theme .buttons .switch-button {
+  background-color: #000000;
+  border-color: #000000;
+}
+
+.black-theme .buttons .switch-button:hover {
+  background-color: #28282B;
+  box-shadow: 4px 4px #808080;
+  top: -4px;
+  left: -4px;
+}
+
+.black-theme .analytics .data {
+  color: #ffffff;
+}
+
+.black-theme .julezand{
+  background-image: url(https://media0.giphy.com/media/v1.Y2lkPTc5MGI3NjExN29xbzhuZGdvbGM2Y3lhcmt3ZXdiY2pwdnI2OWprOXViZng3cmxmbiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/26uf0M7Rs0TyBC0mc/giphy.gif);
+  background-size: 100% 100%;
+}
