@@ -198,8 +198,24 @@ body {
 }
 
 .data i {
+  cursor: pointer;
   font-size: 18px;
   margin-right: 3px;
+  transition: transform 0.1s ease-in-out;
+}
+
+@keyframes pulse {
+  50% {
+      transform: scale(1.5);
+    color: #e43b11;
+  }
+  100% {
+      transform: scale(1);
+  }
+}
+
+.data i.pulse {
+  animation: pulse 0.5s ease-in-out forwards;
 }
 
 .data:last-child {
